@@ -13,5 +13,11 @@ export enum ApiStatus {
 
 export interface IUserState {
     list: IUser[],
-    listStatus: ApiStatus
+    listStatus: ApiStatus,
+    createUserFormStatus: ApiStatus
+}
+
+export interface IUserForm {
+    name: string;
+    email: string;
 }

@@ -1,9 +1,24 @@
 {
-    "user" : [
-        {
-            "id" : 1,
-            "name" : "John",
-            "email" : "john@gmail.com"
-        }
-    ]
+  "user": [
+    {
+      "id": 1,
+      "name": "John",
+      "email": "john@gmail.com"
+    },
+    {
+      "name": "dav",
+      "email": "dav@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "ulrich",
+      "email": "ulrich@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "ddd",
+      "email": "ddd@gmail.com",
+      "id": 4
+    }
+  ]
 }

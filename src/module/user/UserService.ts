@@ -1,8 +1,12 @@
 
 import HttpService from '../../service/HttpService';
 import ApiConfig from '../../service/ApiConfig';
-import { IUser } from './User.type';
+import { IUser, IUserForm } from './User.type';
 
-export const getUserList = async () => {
+export const getUserListApi = async () => {
     return await HttpService.get<IUser[]>(ApiConfig.user)
+}
+
+export const createUserApi = async (data: IUserForm) => {
+    return await HttpService.post<IUser>(ApiConfig.user, data);
 }
