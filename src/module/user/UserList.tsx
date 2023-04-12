@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import { RootState } from '../../app/store'
 import { Modal } from '../../components/modal'
 import { ApiStatus, IUser } from './User.type'
-import { getUserListAction } from './UserSlice'
+import { deleteUserAction, getUserListAction } from './UserSlice'
 
 const UserList = () => {
 
@@ -38,7 +38,11 @@ const UserList = () => {
                 <td>
                   <button onClick={() => setuserDataToView(user)}>View</button>
                   <button>Edit</button>
-                  <button>Delete</button>
+                  <button onClick={() => {
+                    dispatch(deleteUserAction(user.id))
+                  }}>
+                    Delete
+                  </button>
                 </td>
               </tr>)
           })}
